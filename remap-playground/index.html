@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Remap Playground</title>
+    <script src="./remap.js" type="module"></script>
+    <style>
+      canvas {
+        border-style: solid;
+        border-color: grey;
+      }
+      #input-image {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h2>Transform</h2>
+      <select id="transform-selector"></select>
+    </div>
+    <div>
+      <h2>Input</h2>
+      <canvas id="output-canvas" width="400" height="400"></canvas>
+      <canvas id="input-image-canvas" width="400" height="400"></canvas>
+      <video id="input-image" width="400" height="400" src="hires.mp4" autoplay muted loop>
+      </video>
+    </div>
+    <div><hr></div>
+    <div>
+      <h2>Output</h2>
+      <canvas id="input-canvas" width="400" height="400"></canvas>
+      <canvas id="output-image-canvas" width="400" height="400"></canvas>
+    </div>
+    <div><hr></div>
+    <div>
+      <input type="range" min="1" max="50" value="50" class="slider" id="num-dots">
+    </div>
+  </body>
+</html>

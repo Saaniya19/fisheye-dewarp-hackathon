@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WebGL Demo</title>
+    <script src="./webgl-demo.js" type="module"></script>
+    <style>
+      canvas {
+        border-style: solid;
+        border-color: grey;
+      }
+      #input-image-canvas {
+        display: none
+      }
+      #glcanvas {
+        display: inline;
+        position: absolute;
+        left: 0px;
+      }
+      #output-image-canvas {
+        display: inline;
+        position: absolute;
+        left: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h2>Transform</h2>
+      <select id="transform-selector"></select>
+      <select id="backend-selector">
+        <option>Canvas</option>
+        <option>WebGL</option>
+      </select>
+      <button id="fullscreen">Fullscreen</button>
+    </div>
+    <canvas id="input-image-canvas" width="400" height="400"></canvas>
+    <video id="input-image" src="hires.mp4" width=400 height=400 autoplay muted loop></video>
+    <canvas id="output-canvas" width="400" height="400"></canvas>
+    <br>
+    <canvas id="glcanvas" width="400" height="400"></canvas>
+    <canvas id="output-image-canvas" width="400" height="400"></canvas>
+    </video>
+  </body>
+</html>
